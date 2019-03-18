@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://circuits.generalassemb.ly/student/931/challenges/27 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="./Unit 3 Project _ JavaScript _ GA Circuits_files/44a7295480"></script><script src="./Unit 3 Project _ JavaScript _ GA Circuits_files/nr-1099.min.js"></script><script type="text/javascript" async="" src="./Unit 3 Project _ JavaScript _ GA Circuits_files/28ccf2baa8560461d85b7905e95017e7eaef5470.1.js"></script><script type="text/javascript" async="" src="./Unit 3 Project _ JavaScript _ GA Circuits_files/i.js"></script><script async="" src="./Unit 3 Project _ JavaScript _ GA Circuits_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"44a7295480","applicationID":"66441235","transactionName":"dg1aRxMMCghUEBlKR0AGUV0VTAUMUA5aXF1SBxtEDhENF0EDVVxAGhFcXBY=","queueTime":4,"applicationTime":424,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+
+<meta content="IE=Edge,chrome=1" http-equiv="X-UI-Compatible">
+<title>Unit 3 Project | JavaScript  | GA Circuits</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://ga-circuits-production-herokuapp-com.global.ssl.fastly.net/assets/favicon-362b6546f2d0abc57e58ce80e6265e77ee1a53dd77bcf01e7e28b7a93667ec6b.ico">
+
+<link rel="stylesheet" media="all" href="./Unit 3 Project _ JavaScript _ GA Circuits_files/application-f6edc3d3a0f6f62ee969822130c0aa03a10bc56b1397186b4e14e68d33252dad.css">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="3Fqq7fXl7Oij9PlAOV89NBQyFFRxjz5JqL4kibunmujOFcujHr6hMPxFKyhLYUIKuspeRtcGQJoATlVS8z2NdA==">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  
+  ga('create', 'UA-18018358-24', 'auto');
+  var circuits_course = 'JavaScript ';
+  if (circuits_course != '') {
+    ga('set', 'dimension1', circuits_course);
+  }
+  ga('send', 'pageview');
+  
+  ga('create', 'UA-18018358-1', 'auto', {'name': 'ga-ly-tracker'});
+  ga('ga-ly-tracker.send', 'pageview');
+</script>
+
+<script>
+  var _kmq = _kmq || [];
+  var _kmk = _kmk || '28ccf2baa8560461d85b7905e95017e7eaef5470';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+
+<script>
+  (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:97295,hjsv:5};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script><script async="" src="./Unit 3 Project _ JavaScript _ GA Circuits_files/hotjar-97295.js"></script>
+
+<script src="./Unit 3 Project _ JavaScript _ GA Circuits_files/honeybadger.min.js"></script>
+<script>
+  Honeybadger.configure({
+    api_key: 'f50f5345',
+    environment: 'production',
+    onerror: true // Aim to remove this ASAP
+  });
+</script>
+<script>
+  Honeybadger.setContext({
+    user_id: 16587
+  });
+</script>
+
+<link rel="stylesheet" media="all" href="./Unit 3 Project _ JavaScript _ GA Circuits_files/sql_challenge-07596e5c46888b27e8008c1638f2f5aed87e79c3a541ec81153f523ff15f3f61.css">
+
+<style type="text/css">/* BASICS */
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: monospace;
+  height: 300px;
+  color: black;
+  direction: ltr; }
+
+/* PADDING */
+.CodeMirror-lines {
+  padding: 4px 0;
+  /* Vertical padding around content */ }
+
+.CodeMirror pre {
+  padding: 0 4px;
+  /* Horizontal padding of content */ }
+
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: white;
+  /* The little square between H and V scrollbars */ }
+
+/* GUTTER */
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+  white-space: nowrap; }
+
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap; }
+
+.CodeMirror-guttermarker {
+  color: black; }
+
+.CodeMirror-guttermarker-subtle {
+  color: #999; }
+
+/* CURSOR */
+.CodeMirror-cursor {
+  border-left: 1px solid black;
+  border-right: none;
+  width: 0; }
+
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver; }
+
+.cm-fat-cursor .CodeMirror-cursor {
+  width: auto;
+  border: 0 !important;
+  background: #7e7; }
+
+.cm-fat-cursor div.CodeMirror-cursors {
+  z-index: 1; }
+
+.cm-fat-cursor-mark {
+  background-color: rgba(20, 255, 20, 0.5);
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite; }
+
+.cm-animate-fat-cursor {
+  width: auto;
+  border: 0;
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+  background-color: #7e7; }
+
+@-moz-keyframes blink {
+  0% { }
+  50% {
+    background-color: transparent; }
+  100% { } }
+
+@-webkit-keyframes blink {
+  0% { }
+  50% {
+    background-color: transparent; }
+  100% { } }
+
+@keyframes blink {
+  0% { }
+  50% {
+    background-color: transparent; }
+  100% { } }
+
+/* Can style cursor different in overwrite (non-insert) mode */
+.cm-tab {
+  display: inline-block;
+  text-decoration: inherit; }
+
+.CodeMirror-rulers {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50px;
+  bottom: -20px;
+  overflow: hidden; }
+
+.CodeMirror-ruler {
+  border-left: 1px solid #ccc;
+  top: 0;
+  bottom: 0;
+  position: absolute; }
+
+/* DEFAULT THEME */
+.cm-s-default .cm-header {
+  color: blue; }
+
+.cm-s-default .cm-quote {
+  color: #090; }
+
+.cm-negative {
+  color: #d44; }
+
+.cm-positive {
+  color: #292; }
+
+.cm-header, .cm-strong {
+  font-weight: bold; }
+
+.cm-em {
+  font-style: italic; }
+
+.cm-link {
+  text-decoration: underline; }
+
+.cm-strikethrough {
+  text-decoration: line-through; }
+
+.cm-s-default .cm-keyword {
+  color: #708; }
+
+.cm-s-default .cm-atom {
+  color: #219; }
+
+.cm-s-default .cm-number {
+  color: #164; }
+
+.cm-s-default .cm-def {
+  color: #00f; }
+
+.cm-s-default .cm-variable-2 {
+  color: #05a; }
+
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {
+  color: #085; }
+
+.cm-s-default .cm-comment {
+  color: #a50; }
+
+.cm-s-default .cm-string {
+  color: #a11; }
+
+.cm-s-default .cm-string-2 {
+  color: #f50; }
+
+.cm-s-default .cm-meta {
+  color: #555; }
+
+.cm-s-default .cm-qualifier {
+  color: #555; }
+
+.cm-s-default .cm-builtin {
+  color: #30a; }
+
+.cm-s-default .cm-bracket {
+  color: #997; }
+
+.cm-s-default .cm-tag {
+  color: #170; }
+
+.cm-s-default .cm-attribute {
+  color: #00c; }
+
+.cm-s-default .cm-hr {
+  color: #999; }
+
+.cm-s-default .cm-link {
+  color: #00c; }
+
+.cm-s-default .cm-error {
+  color: #f00; }
+
+.cm-invalidchar {
+  color: #f00; }
+
+.CodeMirror-composing {
+  border-bottom: 2px solid; }
+
+/* Default styles for common addons */
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: #0b0; }
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: #a22; }
+
+.CodeMirror-matchingtag {
+  background: rgba(255, 150, 0, 0.3); }
+
+.CodeMirror-activeline-background {
+  background: #e8f2ff; }
+
+/* STOP */
+/* The rest of this file contains styles related to the mechanics of
+   the editor. You probably shouldn't touch them. */
+.CodeMirror {
+  position: relative;
+  overflow: hidden;
+  background: white; }
+
+.CodeMirror-scroll {
+  overflow: scroll !important;
+  /* Things will break if this is overridden */
+  /* 30px is the magic margin used to hide the element's real scrollbars */
+  /* See overflow: hidden in .CodeMirror */
+  margin-bottom: -30px;
+  margin-right: -30px;
+  padding-bottom: 30px;
+  height: 100%;
+  outline: none;
+  /* Prevent dragging from highlighting the element */
+  position: relative; }
+
+.CodeMirror-sizer {
+  position: relative;
+  border-right: 30px solid transparent; }
+
+/* The fake, visible scrollbars. Used to force redraw during scrolling
+   before actual scrolling happens, thus preventing shaking and
+   flickering artifacts. */
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  position: absolute;
+  z-index: 6;
+  display: none; }
+
+.CodeMirror-vscrollbar {
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.CodeMirror-hscrollbar {
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll; }
+
+.CodeMirror-scrollbar-filler {
+  right: 0;
+  bottom: 0; }
+
+.CodeMirror-gutter-filler {
+  left: 0;
+  bottom: 0; }
+
+.CodeMirror-gutters {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  z-index: 3; }
+
+.CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -30px; }
+
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: none !important;
+  border: none !important; }
+
+.CodeMirror-gutter-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4; }
+
+.CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4; }
+
+.CodeMirror-gutter-wrapper ::selection {
+  background-color: transparent; }
+
+.CodeMirror-gutter-wrapper ::-moz-selection {
+  background-color: transparent; }
+
+.CodeMirror-lines {
+  cursor: text;
+  min-height: 1px;
+  /* prevents collapsing before first draw */ }
+
+.CodeMirror pre {
+  /* Reset some styles that the rest of the page might have set */
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-width: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual; }
+
+.CodeMirror-wrap pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal; }
+
+.CodeMirror-linebackground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0; }
+
+.CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  padding: 0.1px;
+  /* Force widget margins to stay inside of the container */ }
+
+.CodeMirror-rtl pre {
+  direction: rtl; }
+
+.CodeMirror-code {
+  outline: none; }
+
+/* Force content-box sizing for the elements where we expect it */
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+.CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.CodeMirror-cursor {
+  position: absolute;
+  pointer-events: none; }
+
+.CodeMirror-measure pre {
+  position: static; }
+
+div.CodeMirror-cursors {
+  visibility: hidden;
+  position: relative;
+  z-index: 3; }
+
+div.CodeMirror-dragcursors {
+  visibility: visible; }
+
+.CodeMirror-focused div.CodeMirror-cursors {
+  visibility: visible; }
+
+.CodeMirror-selected {
+  background: #d9d9d9; }
+
+.CodeMirror-focused .CodeMirror-selected {
+  background: #d7d4f0; }
+
+.CodeMirror-crosshair {
+  cursor: crosshair; }
+
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection {
+  background: #d7d4f0; }
+
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection {
+  background: #d7d4f0; }
+
+.cm-searching {
+  background-color: #ffa;
+  background-color: rgba(255, 255, 0, 0.4); }
+
+/* Used to force a border model for a node */
+.cm-force-border {
+  padding-right: .1px; }
+
+@media print {
+  /* Hide the cursor when printing */
+  .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden; } }
+
+/* See issue #2901 */
+.cm-tab-wrap-hack:after {
+  content: ''; }
+
+/* Help users use markselection to safely style text background */
+span.CodeMirror-selectedtext {
+  background: none; }
+</style><style type="text/css">.CodeMirror-lint-marker {
+  background-color: #f44040;
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  width: 3px;
+  vertical-align: middle;
+  position: relative; }
+
+/* Theme: Circuits */
+.cm-s-Circuits.CodeMirror {
+  color: #fff;
+  min-height: calc(50vh - 212px); }
+
+.cm-s-Circuits .cm-m-css {
+  color: #ff7f11; }
+
+.cm-s-Circuits.CodeMirror {
+  background: #383838; }
+
+.cm-s-Circuits .CodeMirror-cursor {
+  border-left: 1px solid #fff; }
+
+.cm-s-Circuits .CodeMirror-activeline-background {
+  background: #222222 !important; }
+
+.cm-s-Circuits .CodeMirror-selected {
+  background: #222222; }
+
+.cm-s-Circuits .cm-comment {
+  font-style: italic;
+  color: #666666; }
+
+.cm-s-Circuits .cm-string {
+  color: #aafac8; }
+
+.cm-s-Circuits .cm-string-2 {
+  color: #38c8c5; }
+
+.cm-s-Circuits .cm-number {
+  color: #38c8c5; }
+
+.cm-s-Circuits .cm-def {
+  color: #38c8c5; }
+
+.cm-s-Circuits .cm-builtin {
+  color: #aafac8; }
+
+.cm-s-Circuits .cm-property {
+  color: #fff; }
+
+.cm-s-Circuits .cm-atom {
+  color: #ff0000; }
+
+.cm-s-Circuits .cm-qualifier {
+  color: #aafac8; }
+
+.cm-s-Circuits .cm-tag {
+  color: #38c8c5; }
+
+.cm-s-Circuits .cm-attribute {
+  color: #38c8c5; }
+
+.cm-s-Circuits .cm-keyword {
+  color: #0B93FF; }
+
+.cm-s-Circuits .cm-operator {
+  color: #ff7f11; }
+
+.cm-s-Circuits .cm-error {
+  border-bottom: 2px dotted #FF1E00;
+  font-style: italic;
+  color: #fff; }
+
+.cm-s-Circuits .cm-invalidchar {
+  background: #FF1E00;
+  font-style: italic;
+  color: #FFFFFF; }
+
+.cm-s-Circuits .cm-variable {
+  color: #218B97; }
+
+.cm-s-Circuits .cm-variable-2 {
+  color: #CFFF01; }
+
+.cm-s-Circuits .CodeMirror-gutters {
+  border-right: none;
+  background: #313131; }
+
+.cm-s-Circuits .cm-m-xml.cm-attribute {
+  color: #38c8c5; }
+
+.cm-s-Circuits .cm-m-xml.cm-string {
+  color: #aafac8; }
+
+.cm-s-Circuits .cm-m-xml.cm-tag {
+  color: #0B93FF; }
+
+.cm-s-Circuits .cm-m-xml.cm-bracket {
+  color: #FFF; }
+
+.cm-s-Circuits .cm-m-css.cm-atom {
+  color: #0B93FF; }
+
+.cm-s-Circuits .cm-m-css.cm-tag {
+  color: #0B93FF; }
+
+.challenge {
+  margin-top: -1px; }
+
+.workspace {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 62px);
+  height: 100%; }
+  .workspace .feedback {
+    background-color: #4e4e4e;
+    font-family: 'Circular std', sans-serif;
+    clear: both;
+    display: flex;
+    align-items: center;
+    flex: 66px 0 0; }
+    .workspace .feedback button {
+      background-color: #358df2;
+      padding: 0.6em 1em;
+      font-size: 1em;
+      margin: 0.2em;
+      border: none;
+      border-radius: 0.2em;
+      color: #fff; }
+      .workspace .feedback button.disabled, .workspace .feedback button.disabled:hover, .workspace .feedback button.disabled:focus {
+        cursor: default;
+        background-color: #c3c3c3;
+        color: #818181; }
+    .workspace .feedback .test-results {
+      font-size: 0.9em;
+      margin-left: 2em; }
+    .workspace .feedback.query-editor__controls {
+      z-index: 999; }
+  .workspace .editor__output {
+    display: flex;
+    flex: 100px 1.5 0;
+    min-height: 0; }
+    .workspace .editor__output .dom-preview {
+      flex-grow: 3;
+      display: none; }
+      .workspace .editor__output .dom-preview.dom-visible {
+        display: flex; }
+  .workspace .tabs {
+    background: #313131;
+    flex: 100px 1 0; }
+    .workspace .tabs .tab {
+      display: inline-block;
+      color: #fff;
+      padding: 10px 20px;
+      width: auto;
+      text-align: center;
+      font-family: "Circular", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 0.85em;
+      cursor: pointer; }
+      .workspace .tabs .tab.active-tab {
+        border-bottom: 3px solid;
+        border-bottom-color: #3b8fee; }
+    .workspace .tabs .download-button {
+      float: right;
+      width: 1.5em;
+      height: 1.5em;
+      margin: 0.5em;
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAXpJREFUaAXtWUEOgjAQVN+hD/LmzR/4EL6Kv9CIM6bbbCoUqrTLYTepu2CZnZmCsWG383AH3IEqDgzDcMbowzhXaVITNBBH+kRfq9e+FjBpa+w9Qh+vVR/WArLCcQFWzktfXwFxwir7Clg5L319BcQJq+wrYOW89PUVECessq+AlfPSt3gF8Ddf77QuAvRrBt4Fo93OLTRD+sQTn9cx8uH7mCbmXDGBGBLVdm6xPzrRLR2jIvQE1hEgFDiVkue0JgK45No1Nv4SwZM6tACcHyNPjL9vSd1nss4QiLeTJs9awJZcK3Or5jkiJK2DZHA85XwUXpV0Cp4jpMmHelvkRUxGRKph9rkRzOZ5QkQqQB9/PfTNSacNC0Rsj7yIWSBiu+QXiNg++UTES930rG1+KoVUaQbhDuMRRld6vc93B9yBlRzAQyg7MJRNg/uO2Xdrs699AMJNxnElP0ph7ngzdcpdVLwnzoFZfLdEwA3E7gbk2JO9PdwBdyDjwBvJbVrc45GAGQAAAABJRU5ErkJggg==); }
+      .workspace .tabs .download-button:hover {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAeBJREFUaAXtWTFOxDAQ9CZ0CF4A30D3BTo6QPR0SNwfrj8kOnoESBR0fOHEO3gBiI7EeIxWsqI4iR3bAt1GimLtnWdnZh3nNqeUHOLAdjtAueQv1l/HrW7vgF9RdblZ7r7myLWTAxSYIK+1PrBjZYUc5shV5QAFJpPvjlPnyyYgNVEfngjwOVMqLhUo5bQvj1TA50ypuFSglNO+PFIBnzOl4lKBUk778kgFfM6Uigc3NG6npUhfvS33X+aQPVp/nChNt8CI6dyClxB3WrZh0fS8uPk8jRVg5xoMYOHkFjQEL1iAC26S1m2r7mNEYA7mAsPFDB2HCzDLhogaThQjoo+8xTTYjDv1GiwAa76q1EWsCB95YMbcT8EC4Mzmeu8pRsQQeWBOdd393qz3QkOEmkY/uonqms66ax5VhBGx5IE/SwAAfCK6NyfIurEU5JMI8IlA3HekIg/82RVgkn2V4M/ca0rywE0mAGBjIlKTTy5gSEQO8lkEsIimVQ/mBelvhYl0XanzObsNcPuOqOdAH5Abs0RJrUjRN06zUFc5yLs5ZSwObKsDo88B7sDMzwD7d1Epo8y2+z6lQxvdhbgDK0Wc88CwKR3aqAAG/KvXUQEoI8pZWgAvodJ5JZ848N8c+AFcbBOOWoDVXgAAAABJRU5ErkJggg==); }
+
+.console {
+  flex-grow: 1;
+  flex-basis: 300px;
+  background-color: #222;
+  padding: 0.4em;
+  font-family: monospace;
+  overflow: auto; }
+  .console .error, .console .stderr {
+    color: #f44040; }
+    .console .error:before, .console .stderr:before {
+      content: "> "; }
+  .console .stdout {
+    color: #fff; }
+    .console .stdout:before {
+      content: "> "; }
+
+.test-results {
+  color: #ccc;
+  float: left; }
+</style><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><style id="react-tooltip">.__react_component_tooltip{border-radius:3px;display:inline-block;font-size:13px;left:-999em;opacity:0;padding:8px 21px;position:fixed;pointer-events:none;transition:opacity 0.3s ease-out , margin-top 0.3s ease-out, margin-left 0.3s ease-out;top:-999em;visibility:hidden;z-index:999}.__react_component_tooltip:before,.__react_component_tooltip:after{content:"";width:0;height:0;position:absolute}.__react_component_tooltip.show{opacity:0.9;margin-top:0px;margin-left:0px;visibility:visible}.__react_component_tooltip.type-dark{color:#fff;background-color:#222}.__react_component_tooltip.type-dark.place-top:after{border-top:6px solid #222}.__react_component_tooltip.type-dark.place-bottom:after{border-bottom:6px solid #222}.__react_component_tooltip.type-dark.place-left:after{border-left:6px solid #222}.__react_component_tooltip.type-dark.place-right:after{border-right:6px solid #222}.__react_component_tooltip.type-dark.border{border:1px solid #fff}.__react_component_tooltip.type-dark.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-dark.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-dark.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-dark.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-success{color:#fff;background-color:#8DC572}.__react_component_tooltip.type-success.place-top:after{border-top:6px solid #8DC572}.__react_component_tooltip.type-success.place-bottom:after{border-bottom:6px solid #8DC572}.__react_component_tooltip.type-success.place-left:after{border-left:6px solid #8DC572}.__react_component_tooltip.type-success.place-right:after{border-right:6px solid #8DC572}.__react_component_tooltip.type-success.border{border:1px solid #fff}.__react_component_tooltip.type-success.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-success.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-success.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-success.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-warning{color:#fff;background-color:#F0AD4E}.__react_component_tooltip.type-warning.place-top:after{border-top:6px solid #F0AD4E}.__react_component_tooltip.type-warning.place-bottom:after{border-bottom:6px solid #F0AD4E}.__react_component_tooltip.type-warning.place-left:after{border-left:6px solid #F0AD4E}.__react_component_tooltip.type-warning.place-right:after{border-right:6px solid #F0AD4E}.__react_component_tooltip.type-warning.border{border:1px solid #fff}.__react_component_tooltip.type-warning.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-warning.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-warning.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-warning.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-error{color:#fff;background-color:#BE6464}.__react_component_tooltip.type-error.place-top:after{border-top:6px solid #BE6464}.__react_component_tooltip.type-error.place-bottom:after{border-bottom:6px solid #BE6464}.__react_component_tooltip.type-error.place-left:after{border-left:6px solid #BE6464}.__react_component_tooltip.type-error.place-right:after{border-right:6px solid #BE6464}.__react_component_tooltip.type-error.border{border:1px solid #fff}.__react_component_tooltip.type-error.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-error.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-error.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-error.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-info{color:#fff;background-color:#337AB7}.__react_component_tooltip.type-info.place-top:after{border-top:6px solid #337AB7}.__react_component_tooltip.type-info.place-bottom:after{border-bottom:6px solid #337AB7}.__react_component_tooltip.type-info.place-left:after{border-left:6px solid #337AB7}.__react_component_tooltip.type-info.place-right:after{border-right:6px solid #337AB7}.__react_component_tooltip.type-info.border{border:1px solid #fff}.__react_component_tooltip.type-info.border.place-top:before{border-top:8px solid #fff}.__react_component_tooltip.type-info.border.place-bottom:before{border-bottom:8px solid #fff}.__react_component_tooltip.type-info.border.place-left:before{border-left:8px solid #fff}.__react_component_tooltip.type-info.border.place-right:before{border-right:8px solid #fff}.__react_component_tooltip.type-light{color:#222;background-color:#fff}.__react_component_tooltip.type-light.place-top:after{border-top:6px solid #fff}.__react_component_tooltip.type-light.place-bottom:after{border-bottom:6px solid #fff}.__react_component_tooltip.type-light.place-left:after{border-left:6px solid #fff}.__react_component_tooltip.type-light.place-right:after{border-right:6px solid #fff}.__react_component_tooltip.type-light.border{border:1px solid #222}.__react_component_tooltip.type-light.border.place-top:before{border-top:8px solid #222}.__react_component_tooltip.type-light.border.place-bottom:before{border-bottom:8px solid #222}.__react_component_tooltip.type-light.border.place-left:before{border-left:8px solid #222}.__react_component_tooltip.type-light.border.place-right:before{border-right:8px solid #222}.__react_component_tooltip.place-top{margin-top:-10px}.__react_component_tooltip.place-top:before{border-left:10px solid transparent;border-right:10px solid transparent;bottom:-8px;left:50%;margin-left:-10px}.__react_component_tooltip.place-top:after{border-left:8px solid transparent;border-right:8px solid transparent;bottom:-6px;left:50%;margin-left:-8px}.__react_component_tooltip.place-bottom{margin-top:10px}.__react_component_tooltip.place-bottom:before{border-left:10px solid transparent;border-right:10px solid transparent;top:-8px;left:50%;margin-left:-10px}.__react_component_tooltip.place-bottom:after{border-left:8px solid transparent;border-right:8px solid transparent;top:-6px;left:50%;margin-left:-8px}.__react_component_tooltip.place-left{margin-left:-10px}.__react_component_tooltip.place-left:before{border-top:6px solid transparent;border-bottom:6px solid transparent;right:-8px;top:50%;margin-top:-5px}.__react_component_tooltip.place-left:after{border-top:5px solid transparent;border-bottom:5px solid transparent;right:-6px;top:50%;margin-top:-4px}.__react_component_tooltip.place-right{margin-left:10px}.__react_component_tooltip.place-right:before{border-top:6px solid transparent;border-bottom:6px solid transparent;left:-8px;top:50%;margin-top:-5px}.__react_component_tooltip.place-right:after{border-top:5px solid transparent;border-bottom:5px solid transparent;left:-6px;top:50%;margin-top:-4px}.__react_component_tooltip .multi-line{display:block;padding:2px 0px;text-align:center}</style><script async="" src="./Unit 3 Project _ JavaScript _ GA Circuits_files/modules-53580245dd2130370f2ced95f7dffc32.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body>
+
+<header class="navigation-header" id="nav-primary">
+<ul class="nav-primary"><li class="nav-primary-item activate-button js-activate-mobile-nav centered">
+<a href="https://circuits.generalassemb.ly/"><img src="./Unit 3 Project _ JavaScript _ GA Circuits_files/menu-icon-9f76e6629813ddb8f03d1654df53efb181983e9ced4103eff02b98f0a9810cb1.svg" alt="Menu icon">
+</a></li><li class="nav-primary-item logo-container">
+<a href="https://circuits.generalassemb.ly/"><span class="icon-cog">JavaScript  Circuit</span>
+</a></li><li class="nav-primary-item unit-count centered">
+<a href="https://circuits.generalassemb.ly/student/931/units/350?cohort=931">Unit 3</a>
+</li><li class="nav-primary-item unit-activity activity-menu-trigger">
+<a class="js-unit-dropdown" href="https://circuits.generalassemb.ly/student/931/challenges/27#"><span class="activity-count">
+12 of 12
+</span>
+<span class="activity-title">
+Unit 3 Project
+</span>
+</a><nav>
+<ul class="activity-menu">
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/slideshows/655"><span class="dropdown-icon icon-activity-completed icon-slideshow"></span>
+Lesson 1: Functions in JavaScript
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/challenges/8"><span class="dropdown-icon icon-activity-completed icon-code-challenge"></span>
+Lesson 1 Code Challenge - Contact Book: Part 1
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/slideshows/658"><span class="dropdown-icon icon-activity-completed icon-slideshow"></span>
+Lesson 2: Defining Functions
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/challenges/9"><span class="dropdown-icon icon-activity-completed icon-code-challenge"></span>
+Lesson 2 Code Challenge - Contact Book: Part 2
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/challenges/25"><span class="dropdown-icon icon-activity-completed icon-code-challenge"></span>
+Lesson 2 Code Challenge - Glorp
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/slideshows/659"><span class="dropdown-icon icon-activity-completed icon-slideshow"></span>
+Lesson 3: Parameters &amp; Return Statement
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/challenges/10"><span class="dropdown-icon icon-activity-completed icon-code-challenge"></span>
+Lesson 3 Code Challenge - Contact Book: Part 3
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/slideshows/663"><span class="dropdown-icon icon-activity-completed icon-slideshow"></span>
+Lesson 4: Scope
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/challenges/11"><span class="dropdown-icon icon-activity-completed icon-code-challenge"></span>
+Lesson 4 Code Challenge - Scope
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/pages/1318"><span class="dropdown-icon icon-activity-completed icon-wrapup"></span>
+Unit 3 Review Guide
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link " href="https://circuits.generalassemb.ly/student/931/quizzes/392"><span class="dropdown-icon icon-activity-completed icon-quiz"></span>
+Unit 3 Quiz
+</a></li>
+<li class="units-listing-item">
+<a class="listing-lessons-link units-listing-current" href="https://circuits.generalassemb.ly/student/931/assignments/287"><span class="dropdown-icon icon-project"></span>
+Unit 3 Project
+</a></li>
+</ul>
+</nav>
+
+</li>
+</ul>
+</header>
+<ul class="nav-secondary">
+<li class="nav-secondary-item">
+<a href="https://circuits.generalassemb.ly/student/931/mentors">My Mentors</a>
+</li>
+<li class="nav-secondary-item">
+<nav class="nav-account">
+<a class="nav-avatar" href="https://circuits.generalassemb.ly/"><img src="./Unit 3 Project _ JavaScript _ GA Circuits_files/medium_center-photo-me.png" alt="Medium center photo me"></a>
+<ul class="nav-account-dropdown">
+<li>
+<a href="https://circuits.generalassemb.ly/me">My Profile</a>
+</li>
+<li>
+<a href="https://circuits.generalassemb.ly/me/edit">Edit my Profile</a>
+</li>
+<li>
+<a href="https://accounts.generalassemb.ly/account">My Account</a>
+</li>
+<li>
+<a class="sign-out" href="https://circuits.generalassemb.ly/auth/sign_out">Sign Out</a>
+</li>
+
+</ul>
+</nav>
+</li>
+</ul>
+
+<ul class="mobile-nav-account-dropdown nav-account-dropdown">
+<li>
+<a href="https://circuits.generalassemb.ly/">JavaScript  Circuit</a>
+</li>
+<li>
+<a href="https://circuits.generalassemb.ly/student/931/mentors">My Mentors</a>
+</li>
+<li>
+<a href="https://circuits.generalassemb.ly/me">My Profile</a>
+</li>
+<li>
+<a href="https://circuits.generalassemb.ly/me/edit">Edit my Profile</a>
+</li>
+<li>
+<a href="https://accounts.generalassemb.ly/account">My Account</a>
+</li>
+<li>
+<a class="sign-out" href="https://circuits.generalassemb.ly/auth/sign_out">Sign Out</a>
+</li>
+
+</ul>
+
+
+<main>
+<div id="js-react-on-rails-context" style="display:none" data-rails-context="{&quot;href&quot;:&quot;https://circuits.generalassemb.ly/student/931/challenges/27&quot;,&quot;location&quot;:&quot;/student/931/challenges/27&quot;,&quot;scheme&quot;:&quot;https&quot;,&quot;host&quot;:&quot;circuits.generalassemb.ly&quot;,&quot;port&quot;:443,&quot;pathname&quot;:&quot;/student/931/challenges/27&quot;,&quot;search&quot;:null,&quot;i18nLocale&quot;:&quot;en&quot;,&quot;i18nDefaultLocale&quot;:&quot;en&quot;,&quot;httpAcceptLanguage&quot;:&quot;en-GB,en-US;q=0.9,en;q=0.8&quot;,&quot;serverSide&quot;:false}"></div>
+<div class="js-react-on-rails-component" style="display:none" data-component-name="ChallengeApp" data-props="{&quot;root&quot;:{&quot;id&quot;:27,&quot;title&quot;:&quot;Unit 3 Project&quot;,&quot;next_activity_link&quot;:&quot;/student/931/assignments/287&quot;,&quot;download_file_name&quot;:&quot;unit-3_unit-3-project_joyce-chew&quot;},&quot;steps&quot;:{&quot;currentStepId&quot;:113,&quot;steps&quot;:[{&quot;id&quot;:113,&quot;root_id&quot;:27,&quot;position&quot;:1,&quot;title&quot;:&quot;Rock, Paper, Scissors&quot;,&quot;prompt&quot;:&quot;For this unit&#39;s project you will be building an application in JavaScript capable of playing the game &#39;Rock, Paper, Scissors&#39; with a user via a console or terminal. In particular, your app will need to:\r\n\r\n- Accept a move from a player.\r\n- Get a random move from the computer.\r\n- Compare the player&#39;s move to the computer&#39;s move in order to determine a winner.\r\n- Keep track of how many times the player and the computer have won.\r\n- Run until either the player or the computer has won five times.\r\n\r\nAlright! Ready? Let&#39;s get started! Hit the Run button to begin\r\n&quot;,&quot;solution&quot;:&quot;Hit the Run button to begin.&quot;,&quot;completed&quot;:false,&quot;available&quot;:false,&quot;active&quot;:false},{&quot;id&quot;:114,&quot;root_id&quot;:27,&quot;position&quot;:2,&quot;title&quot;:&quot;Player Move&quot;,&quot;prompt&quot;:&quot;First up, we need a function that will prompt the user to make a choice. We want the function to return the user&#39;s choice, either rock, paper, or scissors.\r\n\r\n- Create a function `getPlayerMove`. \r\n- Within that function, use `prompt()` with the argument \&quot;Please choose either &#39;rock&#39;, &#39;paper&#39;, or &#39;scissors&#39;.\&quot; and save their choice to the variable `userChoice`. (Hint: you may need to look up `prompt()`.)\r\n- Call your function and use it to log a message to in the console \&quot;Player chose `userChoice`\&quot;.&quot;,&quot;solution&quot;:&quot;```javascript\r\n//Let&#39;s Play Rock, Paper, Scissors!\r\n//Global Variables\r\nvar userChoice;\r\nvar computerChoice;\r\nvar winner;\r\nvar playerRunningTotal;\r\nvar computerRunningTotal;\r\n\r\nfunction getPlayerMove() {\r\n  userChoice = prompt(\&quot;Please choose either &#39;rock&#39;, &#39;paper&#39;, or &#39;scissors&#39;.\&quot;);\r\n  return userChoice;\r\n}\r\n\r\n// Call the functions to test:\r\nconsole.log(\&quot;Player chose \&quot; + getPlayerMove());\r\n```&quot;,&quot;completed&quot;:false,&quot;available&quot;:false,&quot;active&quot;:false},{&quot;id&quot;:115,&quot;root_id&quot;:27,&quot;position&quot;:3,&quot;title&quot;:&quot;Random Computer Choice&quot;,&quot;prompt&quot;:&quot;Alright! Next up we want to create a function to generate and return a random choice from the computer. Let&#39;s give it a try!\r\n\r\n- Create a function `getComputerMove`. \r\n- Within that function, get a random number and save it to the variable `randomNumber`. (Hint: you&#39;ll want to use one of the special number operators we covered in Unit 1 Lesson 3)\r\n- If the random number is less than .33, update the `computerChoice` variable to \&quot;rock\&quot;.\r\n- Otherwise if the random number is less than .66, update `computerChoice` to \&quot;paper\&quot;.\r\n- Otherwise set `computerChoice` to \&quot;scissors\&quot;.\r\n- Return `computerChoice`.\r\n- Call your function and use it to log a message to the console, \&quot;The computer chose `computerChoice`\&quot;.&quot;,&quot;solution&quot;:&quot;```javascript\r\n//Let&#39;s Play Rock, Paper, Scissors!\r\n//Global Variables\r\nvar userChoice;\r\nvar computerChoice;\r\nvar winner;\r\nvar playerRunningTotal;\r\nvar computerRunningTotal;\r\n\r\nfunction getPlayerMove() {\r\n  userChoice = prompt(\&quot;Please choose either &#39;rock&#39;, &#39;paper&#39;, or &#39;scissors&#39;.\&quot;);\r\n  return userChoice;\r\n}\r\n\r\nfunction getComputerMove() {\r\n  var randomNumber = Math.random();\r\n  if (randomNumber \u003c 0.33) {\r\n    computerChoice = \&quot;rock\&quot;;\r\n  } else if (randomNumber \u003c 0.66) {\r\n    computerChoice = \&quot;paper\&quot;;\r\n  } else {\r\n    computerChoice = \&quot;scissors\&quot;;\r\n  }\r\n  return computerChoice;\r\n}\r\n\r\n// Call the functions to test:\r\nconsole.log(\&quot;Player chose \&quot; + getPlayerMove());\r\nconsole.log(\&quot;The computer chose \&quot; + getComputerMove());\r\n\r\n```&quot;,&quot;completed&quot;:false,&quot;available&quot;:false,&quot;active&quot;:false},{&quot;id&quot;:116,&quot;root_id&quot;:27,&quot;position&quot;:4,&quot;title&quot;:&quot;Get Winner&quot;,&quot;prompt&quot;:&quot;Now let&#39;s begin writing code that will eventually compare the player&#39;s move to the computer&#39;s move in order to determine a winner. The rules of the game are that &#39;rock&#39; beats &#39;scissors&#39;, &#39;scissors&#39; beats &#39;paper&#39;, and &#39;paper&#39; beats &#39;rock&#39;.\r\n\r\n- Write a function `getWinner`. The function should accept two parameters, `playerMove` and `computerMove`.\r\n- Write code that will set the variable `winner` to either &#39;player&#39;, &#39;computer&#39;, or &#39;tie&#39; based on the values of `playerMove` and `computerMove`. Assume that the only values `playerMove` and `computerMove` can have are &#39;rock&#39;, &#39;paper&#39;, and &#39;scissors&#39;.\r\n- Return `winner` from the function.\r\n- Call the `getWinner` function, passing in the parameters such as &#39;rock&#39; and &#39;paper&#39; to make sure that the function works.  \r\n- Remove any previous console logs, and log the output of `getWinner` in the console: \&quot;The winner is [winner]\&quot;.&quot;,&quot;solution&quot;:&quot;```javascript\r\n//Let&#39;s Play Rock, Paper, Scissors!\r\n//Global Variables\r\nvar userChoice;\r\nvar computerChoice;\r\nvar winner;\r\nvar playerRunningTotal;\r\nvar computerRunningTotal;\r\n\r\nfunction getPlayerMove() {\r\n  userChoice = prompt(\&quot;Please choose either &#39;rock&#39;, &#39;paper&#39;, or &#39;scissors&#39;.\&quot;);\r\n  return userChoice;\r\n}\r\n\r\nfunction getComputerMove() {\r\n  var randomNumber = Math.random();\r\n  if (randomNumber \u003c 0.33) {\r\n    computerChoice = \&quot;rock\&quot;;\r\n  } else if (randomNumber \u003c 0.66) {\r\n    computerChoice = \&quot;paper\&quot;;\r\n  } else {\r\n    computerChoice = \&quot;scissors\&quot;;\r\n  }\r\n  return computerChoice;\r\n}\r\n\r\nfunction getWinner(playerMove, computerMove) {\r\n  if (playerMove === computerMove) {\r\n    winner = &#39;tie&#39;;\r\n   } else if (\r\n    playerMove === &#39;rock&#39; \u0026\u0026 computerMove === &#39;scissors&#39; ||\r\n    playerMove === &#39;paper&#39; \u0026\u0026 computerMove === &#39;rock&#39; ||\r\n    playerMove === &#39;scissors&#39; \u0026\u0026 computerMove === &#39;paper&#39;\r\n  ) {\r\n    winner = &#39;player&#39;;\r\n  } else {\r\n    winner = &#39;computer&#39;;\r\n  }\r\n  return winner;\r\n}\r\n\r\nconsole.log(\&quot;The winner is \&quot; + getWinner(&#39;rock&#39;, &#39;paper&#39;));\r\n```&quot;,&quot;completed&quot;:false,&quot;available&quot;:false,&quot;active&quot;:false},{&quot;id&quot;:117,&quot;root_id&quot;:27,&quot;position&quot;:5,&quot;title&quot;:&quot;Best of 5!&quot;,&quot;prompt&quot;:&quot;Now we need a way to keep track of how many times the player and the computer have won. This game will be \&quot;best of five\&quot;, so the game will run until either the player or the computer has won five times.\r\n\r\n\r\n- Write a function `playToFive`.\r\n- Let&#39;s display some text to let the user know the game is on! Inside the function, log \&quot;Let&#39;s play Rock Paper Scissors\&quot; to the console.\r\n- Update `playerRunningTotal` and `computerRunningTotal` so their initial value is 0. \r\n- Write code that plays &#39;Rock, Paper, Scissors&#39; until either the player or the computer has won five times.\r\n- You&#39;ll want to use a loop, and each time the loop runs you&#39;ll need to do the following:\r\n    \r\n    1)  Call the `getPlayerMove` and `getComputerMove` functions to get a player move and a computer move. (Hint: you&#39;ll want to save each move to a variable so you can reference it later)\r\n    2) Call the `getWinner` function, passing in the player&#39;s move and the computer&#39;s move as parameters.\r\n    3) If the player wins, increase the `playerRunningTotal` variable. Otherwise, increase the `computerRunningTotal` variable.\r\n    4) After each &#39;round&#39;, create an alert indicating who played what, who won, and what the current scoreboard looks like.\r\n\r\nFor example,\r\n\r\n```javascript\r\nalert(\&quot;Player chose \&quot; + userChoice + \&quot; while Computer chose \&quot; \r\n+ computerChoice + \&quot;! \\nThe score is Player \&quot;+ playerRunningTotal \r\n+ \&quot;, Computer \&quot; + computerRunningTotal + \&quot;.\&quot;);\r\n``` \r\n\r\nFinally, call the `playToFive` function to play!!!&quot;,&quot;solution&quot;:&quot;```javascript\r\n//Let&#39;s Play Rock, Paper, Scissors!\r\n//Global Variables\r\nvar userChoice;\r\nvar computerChoice;\r\nvar winner;\r\nvar playerRunningTotal;\r\nvar computerRunningTotal;\r\n\r\nfunction getPlayerMove() {\r\n  userChoice = prompt(\&quot;Please choose either &#39;rock&#39;, &#39;paper&#39;, or &#39;scissors&#39;.\&quot;);\r\n  return userChoice;\r\n}\r\n\r\nfunction getComputerMove() {\r\n  var randomNumber = Math.random();\r\n  if (randomNumber \u003c 0.33) {\r\n    computerChoice = \&quot;rock\&quot;;\r\n  } else if (randomNumber \u003c 0.66) {\r\n    computerChoice = \&quot;paper\&quot;;\r\n  } else {\r\n    computerChoice = \&quot;scissors\&quot;;\r\n  }\r\n  return computerChoice;\r\n}\r\n\r\nfunction getWinner(playerMove, computerMove) {\r\n  if (playerMove === computerMove) {\r\n    winner = &#39;tie&#39;;\r\n   } else if (\r\n    playerMove === &#39;rock&#39; \u0026\u0026 computerMove === &#39;scissors&#39; ||\r\n    playerMove === &#39;paper&#39; \u0026\u0026 computerMove === &#39;rock&#39; ||\r\n    playerMove === &#39;scissors&#39; \u0026\u0026 computerMove === &#39;paper&#39;\r\n  ) {\r\n    winner = &#39;player&#39;;\r\n  } else {\r\n    winner = &#39;computer&#39;;\r\n  }\r\n  return winner;\r\n}\r\n\r\nfunction playToFive() {\r\n  console.log(\&quot;Let&#39;s play Rock Paper Scissors\&quot;);\r\n  playerRunningTotal = 0;\r\n  computerRunningTotal = 0;\r\n\r\n  while (playerRunningTotal \u003c 5 \u0026\u0026 computerRunningTotal \u003c 5) {\r\n    userChoice = getPlayerMove();\r\n    computerChoice = getComputerMove();\r\n    winner = getWinner(userChoice, computerChoice);\r\n\r\n    if (winner === &#39;player&#39;) {\r\n      playerRunningTotal++;\r\n    } else if (winner === &#39;computer&#39;) {\r\n      computerRunningTotal++;\r\n    }\r\n\r\n    alert(\&quot;Player chose \&quot; + userChoice + \&quot; while Computer chose \&quot; + computerChoice + \&quot;! \\nThe score is Player \&quot;+ playerRunningTotal + \&quot;, Computer \&quot; + computerRunningTotal + \&quot;.\&quot;);\r\n  }\r\n}\r\n\r\nplayToFive();\r\n```&quot;,&quot;completed&quot;:false,&quot;available&quot;:false,&quot;active&quot;:false}]},&quot;assistances&quot;:[{&quot;id&quot;:254,&quot;step_id&quot;:114,&quot;position&quot;:1,&quot;content&quot;:&quot;Here&#39;s what the syntax for prompting the user to make a choice looks like:\r\n\r\n```javascript\r\nuserChoice = prompt(\&quot;Prompt question goes here\&quot;);\r\n```&quot;,&quot;active&quot;:false},{&quot;id&quot;:255,&quot;step_id&quot;:114,&quot;position&quot;:2,&quot;content&quot;:&quot;Here&#39;s what the syntax for returning a value from within a function looks like:\r\n\r\n```javascript\r\nfunction myFunctionName() {\r\n    var favoriteColor = \&quot;blue\&quot;;\r\n    return favoriteColor;\r\n}\r\n```\r\n\r\nHere we want to return the user&#39;s choice.&quot;,&quot;active&quot;:false},{&quot;id&quot;:256,&quot;step_id&quot;:115,&quot;position&quot;:1,&quot;content&quot;:&quot;To get a random number, you can use `Math.random();`&quot;,&quot;active&quot;:false},{&quot;id&quot;:257,&quot;step_id&quot;:115,&quot;position&quot;:2,&quot;content&quot;:&quot;The syntax for writing an if/else if/else statement looks like this:\r\n\r\n```javascript\r\nif (condition) {\r\n    // Code to run if condition is true\r\n} else if (condition) {\r\n    // Code to run if second condition is true\r\n} else {\r\n    // Code to run if none of the conditions are true\r\n}\r\n```&quot;,&quot;active&quot;:false},{&quot;id&quot;:258,&quot;step_id&quot;:116,&quot;position&quot;:1,&quot;content&quot;:&quot;Here&#39;s a refresher on what the syntax for a function that has parameters looks like:\r\n\r\n```javascript\r\nfunction myFunctionName(p1, p2) {\r\n  // This function returns the product of p1 and p2\r\n  return p1 * p2;\r\n}\r\n```\r\n&quot;,&quot;active&quot;:false},{&quot;id&quot;:259,&quot;step_id&quot;:116,&quot;position&quot;:2,&quot;content&quot;:&quot;From within the function, you&#39;ll need to use an if/else if/else statement.&quot;,&quot;active&quot;:false},{&quot;id&quot;:260,&quot;step_id&quot;:117,&quot;position&quot;:1,&quot;content&quot;:&quot;You&#39;ll want to use a while loop inside the function. We want to run this loop until either the `playerRunningTotal` or `computerRunningTotal` reach 5.&quot;,&quot;active&quot;:false},{&quot;id&quot;:261,&quot;step_id&quot;:117,&quot;position&quot;:2,&quot;content&quot;:&quot;Inside the while loop, you&#39;ll need to use an if/else if statement.&quot;,&quot;active&quot;:false}],&quot;cohort&quot;:{&quot;id&quot;:931,&quot;start_date&quot;:&quot;2018-11-13&quot;,&quot;end_date&quot;:&quot;2019-01-22&quot;,&quot;created_at&quot;:&quot;2018-07-24T15:09:54.033-10:00&quot;,&quot;updated_at&quot;:&quot;2018-07-24T15:09:54.033-10:00&quot;,&quot;forum_url&quot;:&quot;&quot;,&quot;curriculum_id&quot;:59,&quot;name&quot;:&quot;11/13/18 JSC&quot;,&quot;real&quot;:true,&quot;mentor_support_email&quot;:&quot;jsc-mentor@generalassemb.ly&quot;,&quot;core_instance_id&quot;:56063,&quot;mentor_support_email_signature&quot;:&quot;Circuits Team&quot;},&quot;progress&quot;:{&quot;id&quot;:20367,&quot;user_id&quot;:16587,&quot;root_id&quot;:27,&quot;last_completed_step_id&quot;:null,&quot;created_at&quot;:&quot;2018-12-08T00:48:50.818-10:00&quot;,&quot;updated_at&quot;:&quot;2018-12-08T00:48:50.818-10:00&quot;},&quot;editors&quot;:{&quot;38&quot;:{&quot;id&quot;:38,&quot;root_id&quot;:27,&quot;language&quot;:&quot;javascript&quot;,&quot;editable&quot;:true,&quot;filename&quot;:&quot;main.js&quot;,&quot;default_content&quot;:&quot;//Let&#39;s Play Rock, Paper, Scissors!\r\n//Global Variables\r\nvar userChoice;\r\nvar computerChoice;\r\nvar winner;\r\nvar playerRunningTotal;\r\nvar computerRunningTotal;&quot;}}}" data-trace="false" data-dom-id="ChallengeApp-react-component-0"></div>
+    <div id="ChallengeApp-react-component-0"><div data-reactroot="" class="challenge"><div class="challenge__left"><div class="challenge__container"><div class="step step--complete"><div class="__react_component_tooltip " data-id="tooltip"><!-- react-text: 6 -->Please complete<!-- /react-text --><br><!-- react-text: 8 -->the current step<!-- /react-text --></div><div data-tip="true" data-for="" class="step__header"><span data-complete="Step 1: Rock, Paper, Scissors">Step 1: Rock, Paper, Scissors</span></div><!-- react-empty: 185 --></div><div class="step step--complete"><div class="__react_component_tooltip " data-id="tooltip"><!-- react-text: 22 -->Please complete<!-- /react-text --><br><!-- react-text: 24 -->the current step<!-- /react-text --></div><div data-tip="true" data-for="" class="step__header" currentitem="false"><span data-complete="Step 2: Player Move">Step 2: Player Move</span></div><!-- react-empty: 329 --></div><div class="step step--complete"><div class="__react_component_tooltip " data-id="tooltip"><!-- react-text: 46 -->Please complete<!-- /react-text --><br><!-- react-text: 48 -->the current step<!-- /react-text --></div><div data-tip="true" data-for="" class="step__header" currentitem="false"><span data-complete="Step 3: Random Computer Choice">Step 3: Random Computer Choice</span></div><!-- react-empty: 388 --></div><div class="step step--complete"><div class="__react_component_tooltip " data-id="tooltip"><!-- react-text: 70 -->Please complete<!-- /react-text --><br><!-- react-text: 72 -->the current step<!-- /react-text --></div><div data-tip="true" data-for="" class="step__header" currentitem="false"><span data-complete="Step 4: Get Winner">Step 4: Get Winner</span></div><!-- react-empty: 541 --></div><div class="step step--open step--complete"><div class="__react_component_tooltip " data-id="tooltip"><!-- react-text: 94 -->Please complete<!-- /react-text --><br><!-- react-text: 96 -->the current step<!-- /react-text --></div><div data-tip="true" data-for="" class="step__header" currentitem="false"><span data-complete="Step 5: Best of 5!">Step 5: Best of 5!</span></div><div style="height: auto;"><div><div class="step__content"><div class="step__prompt"><div><p>Now we need a way to keep track of how many times the player and the computer have won. This game will be "best of five", so the game will run until either the player or the computer has won five times.</p>
+<ul>
+<li>Write a function <code>playToFive</code>.</li>
+<li>Let's display some text to let the user know the game is on! Inside the function, log "Let's play Rock Paper Scissors" to the console.</li>
+<li>Update <code>playerRunningTotal</code> and <code>computerRunningTotal</code> so their initial value is 0. </li>
+<li>Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.</li>
+<li><p>You'll want to use a loop, and each time the loop runs you'll need to do the following:</p>
+<p>  1)  Call the <code>getPlayerMove</code> and <code>getComputerMove</code> functions to get a player move and a computer move. (Hint: you'll want to save each move to a variable so you can reference it later)<br>  2) Call the <code>getWinner</code> function, passing in the player's move and the computer's move as parameters.<br>  3) If the player wins, increase the <code>playerRunningTotal</code> variable. Otherwise, increase the <code>computerRunningTotal</code> variable.<br>  4) After each 'round', create an alert indicating who played what, who won, and what the current scoreboard looks like.</p>
+</li>
+</ul>
+<p>For example,</p>
+<pre><code class="hljs javascript">alert(<span class="hljs-string">"Player chose "</span> + userChoice + <span class="hljs-string">" while Computer chose "</span> 
++ computerChoice + <span class="hljs-string">"! \nThe score is Player "</span>+ playerRunningTotal 
++ <span class="hljs-string">", Computer "</span> + computerRunningTotal + <span class="hljs-string">"."</span>);
+</code></pre>
+<p>Finally, call the <code>playToFive</code> function to play!!!</p>
+</div></div><div><div class="step__hints"><div class="step__hint" style="display: block;"><h3 class="step__hint__header">Hint 1</h3><div class="highlight"><div><p>You'll want to use a while loop inside the function. We want to run this loop until either the <code>playerRunningTotal</code> or <code>computerRunningTotal</code> reach 5.</p>
+</div></div></div><div class="step__hint" style="display: block;"><h3 class="step__hint__header">Hint 2</h3><div class="highlight"><div><p>Inside the while loop, you'll need to use an if/else if statement.</p>
+</div></div></div><div class="step__hint" style="display: block;"><h3 class="step__hint__header">Answer</h3><div class="highlight"><div><pre><code class="hljs javascript"><span class="hljs-comment">//Let's Play Rock, Paper, Scissors!</span>
+<span class="hljs-comment">//Global Variables</span>
+<span class="hljs-keyword">var</span> userChoice;
+<span class="hljs-keyword">var</span> computerChoice;
+<span class="hljs-keyword">var</span> winner;
+<span class="hljs-keyword">var</span> playerRunningTotal;
+<span class="hljs-keyword">var</span> computerRunningTotal;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPlayerMove</span>(<span class="hljs-params"></span>) </span>{
+  userChoice = prompt(<span class="hljs-string">"Please choose either 'rock', 'paper', or 'scissors'."</span>);
+  <span class="hljs-keyword">return</span> userChoice;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getComputerMove</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> randomNumber = <span class="hljs-built_in">Math</span>.random();
+  <span class="hljs-keyword">if</span> (randomNumber &lt; <span class="hljs-number">0.33</span>) {
+    computerChoice = <span class="hljs-string">"rock"</span>;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (randomNumber &lt; <span class="hljs-number">0.66</span>) {
+    computerChoice = <span class="hljs-string">"paper"</span>;
+  } <span class="hljs-keyword">else</span> {
+    computerChoice = <span class="hljs-string">"scissors"</span>;
+  }
+  <span class="hljs-keyword">return</span> computerChoice;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getWinner</span>(<span class="hljs-params">playerMove, computerMove</span>) </span>{
+  <span class="hljs-keyword">if</span> (playerMove === computerMove) {
+    winner = <span class="hljs-string">'tie'</span>;
+   } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (
+    playerMove === <span class="hljs-string">'rock'</span> &amp;&amp; computerMove === <span class="hljs-string">'scissors'</span> ||
+    playerMove === <span class="hljs-string">'paper'</span> &amp;&amp; computerMove === <span class="hljs-string">'rock'</span> ||
+    playerMove === <span class="hljs-string">'scissors'</span> &amp;&amp; computerMove === <span class="hljs-string">'paper'</span>
+  ) {
+    winner = <span class="hljs-string">'player'</span>;
+  } <span class="hljs-keyword">else</span> {
+    winner = <span class="hljs-string">'computer'</span>;
+  }
+  <span class="hljs-keyword">return</span> winner;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">playToFive</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Let's play Rock Paper Scissors"</span>);
+  playerRunningTotal = <span class="hljs-number">0</span>;
+  computerRunningTotal = <span class="hljs-number">0</span>;
+
+  <span class="hljs-keyword">while</span> (playerRunningTotal &lt; <span class="hljs-number">5</span> &amp;&amp; computerRunningTotal &lt; <span class="hljs-number">5</span>) {
+    userChoice = getPlayerMove();
+    computerChoice = getComputerMove();
+    winner = getWinner(userChoice, computerChoice);
+
+    <span class="hljs-keyword">if</span> (winner === <span class="hljs-string">'player'</span>) {
+      playerRunningTotal++;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (winner === <span class="hljs-string">'computer'</span>) {
+      computerRunningTotal++;
+    }
+
+    alert(<span class="hljs-string">"Player chose "</span> + userChoice + <span class="hljs-string">" while Computer chose "</span> + computerChoice + <span class="hljs-string">"! \nThe score is Player "</span>+ playerRunningTotal + <span class="hljs-string">", Computer "</span> + computerRunningTotal + <span class="hljs-string">"."</span>);
+  }
+}
+
+playToFive();
+</code></pre>
+</div></div></div></div><div class="step__answer"></div><!-- react-text: 614 --><!-- /react-text --></div></div></div></div></div><div class="challenge-completion"><h3>Nice Work!</h3><a href="https://circuits.generalassemb.ly/student/931/assignments/287" class="challenge-completion__button">Next Activity</a></div></div></div><div class="challenge__right"><div class="workspace"><div class="tabs"><div class="tab active-tab">main.js</div><div data-tip="true" data-for="download-button" class="download-button" currentitem="true"><div class="__react_component_tooltip border place-left type-dark tooltip" id="download-button" data-id="tooltip" style="left: 1708px; top: 66px;">Download Your Code</div></div><div class="tab-panel"><div><div data-tip="true" data-for="codeEditor"><div class="ReactCodeMirror ReactCodeMirror--focused"><textarea autocomplete="off" style="display: none;">//Let's Play Rock, Paper, Scissors!
+//Global Variables
+var userChoice;
+var computerChoice;
+var winner;
+var playerRunningTotal;
+var computerRunningTotal;</textarea><div class="CodeMirror cm-s-Circuits CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 208px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="width: 18px; pointer-events: none; bottom: 0px; display: block;"><div style="min-width: 1px; height: 1826px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 32px; margin-bottom: 0px; border-right-width: 30px; min-height: 1826px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 810px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"><pre class="CodeMirror-line" role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript cm-comment">//console.log("Player chose " + getPlayerMove());</span></span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">46</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript cm-variable">winner</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"player"</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">47</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript">  }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">48</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp;</span><span class="cm-m-javascript cm-keyword">else</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-keyword">if</span><span class="cm-m-javascript"> (</span><span class="cm-m-javascript cm-variable-2">playerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"paper"</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">&amp;&amp;</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable-2">computerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"scissors"</span><span class="cm-m-javascript">) {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">49</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"><span class="cm-tab" role="presentation" cm-text="	">    </span></span><span class="cm-m-javascript cm-variable">winner</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"computer"</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">50</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript">  }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">51</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp;</span><span class="cm-m-javascript cm-keyword">else</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-keyword">if</span><span class="cm-m-javascript"> (</span><span class="cm-m-javascript cm-variable-2">playerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"paper"</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">&amp;&amp;</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable-2">computerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"paper"</span><span class="cm-m-javascript">) {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">52</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"><span class="cm-tab" role="presentation" cm-text="	">    </span></span><span class="cm-m-javascript cm-variable">winner</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"tie"</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">53</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript">  }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">54</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp;</span><span class="cm-m-javascript cm-keyword">else</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-keyword">if</span><span class="cm-m-javascript"> (</span><span class="cm-m-javascript cm-variable-2">playerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"scissors"</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">&amp;&amp;</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable-2">computerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"paper"</span><span class="cm-m-javascript">) {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">55</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript cm-variable">winner</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"player"</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">56</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript">  }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">57</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp;</span><span class="cm-m-javascript cm-keyword">else</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-keyword">if</span><span class="cm-m-javascript"> (</span><span class="cm-m-javascript cm-variable-2">playerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"scissors"</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">&amp;&amp;</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable-2">computerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"rock"</span><span class="cm-m-javascript">) {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">58</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript cm-variable">winner</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"computer"</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">59</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript">  }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">60</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp;</span><span class="cm-m-javascript cm-keyword">else</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-keyword">if</span><span class="cm-m-javascript"> (</span><span class="cm-m-javascript cm-variable-2">playerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"scissors"</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">&amp;&amp;</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable-2">computerMove</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"scissors"</span><span class="cm-m-javascript">) {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">61</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript cm-variable">winner</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"tie"</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">62</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript">  }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">63</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">64</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp;</span><span class="cm-m-javascript cm-keyword">return</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">winner</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">65</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">66</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript cm-variable">console</span><span class="cm-m-javascript">.</span><span class="cm-m-javascript cm-property">log</span><span class="cm-m-javascript">(</span><span class="cm-m-javascript cm-string">"The winner is "</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">getWinner</span><span class="cm-m-javascript">(</span><span class="cm-m-javascript cm-string">"rock"</span><span class="cm-m-javascript">, </span><span class="cm-m-javascript cm-string">"paper"</span><span class="cm-m-javascript">));</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">67</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">68</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript cm-keyword">function</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-def">playToFive</span><span class="cm-m-javascript">() {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">69</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-variable">console</span><span class="cm-m-javascript">.</span><span class="cm-m-javascript cm-property">log</span><span class="cm-m-javascript">(</span><span class="cm-m-javascript cm-string">"Let's play Rock Paper Scissors"</span><span class="cm-m-javascript">);</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">70</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-variable">playerRunningTotal</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-number">0</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">71</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-variable">computerRunningTotal</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-number">0</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">72</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">73</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-comment">// make while loop until either player or computer hit 5 wins</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">74</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-keyword">while</span><span class="cm-m-javascript"> (</span><span class="cm-m-javascript cm-variable">playerRunningTotal</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">&lt;</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-number">5</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">&amp;&amp;</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">computerRunningTotal</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">&lt;</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-number">5</span><span class="cm-m-javascript">) {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">75</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-comment">//make functions variables to refer to them</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">76</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-variable">userChoice</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">getPlayerMove</span><span class="cm-m-javascript">();</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">77</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-variable">computerChoice</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">getComputerMove</span><span class="cm-m-javascript">();</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">78</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-variable">winner</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">getWinner</span><span class="cm-m-javascript">(</span><span class="cm-m-javascript cm-variable">userChoice</span><span class="cm-m-javascript">, </span><span class="cm-m-javascript cm-variable">computerChoice</span><span class="cm-m-javascript">);</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">79</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp; &nbsp;</span><span class="cm-m-javascript cm-comment">//add one +=1 to winner and no points if tie</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">80</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-m-javascript cm-keyword">if</span><span class="cm-m-javascript"> (</span><span class="cm-m-javascript cm-variable">getWinner</span><span class="cm-m-javascript">(</span><span class="cm-m-javascript cm-variable">userChoice</span><span class="cm-m-javascript">, </span><span class="cm-m-javascript cm-variable">computerChoice</span><span class="cm-m-javascript">) </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"player"</span><span class="cm-m-javascript">) {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">81</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="cm-m-javascript cm-variable">playerRunningTotal</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-number">1</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">82</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp; &nbsp;  } </span><span class="cm-m-javascript cm-keyword">else</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-keyword">if</span><span class="cm-m-javascript"> (</span><span class="cm-m-javascript cm-variable">getWinner</span><span class="cm-m-javascript">(</span><span class="cm-m-javascript cm-variable">userChoice</span><span class="cm-m-javascript">, </span><span class="cm-m-javascript cm-variable">computerChoice</span><span class="cm-m-javascript">) </span><span class="cm-m-javascript cm-operator">===</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"computer"</span><span class="cm-m-javascript">) {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">83</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="cm-m-javascript cm-variable">computerRunningTotal</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-number">1</span><span class="cm-m-javascript">; </span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">84</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp; &nbsp;  } </span><span class="cm-m-javascript cm-keyword">else</span><span class="cm-m-javascript"> {</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">85</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-m-javascript cm-variable">playerRunningTotal</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-number">0</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">86</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="cm-m-javascript cm-variable">computerRunningTotal</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-number">0</span><span class="cm-m-javascript">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">87</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp; &nbsp;  }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">88</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-comment">//alert at end of round</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">89</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-keyword">var</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-def">scoreboard</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">=</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">alert</span><span class="cm-m-javascript">(</span><span class="cm-m-javascript cm-string">"Player chose "</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">userChoice</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">" while Computer chose "</span><span class="cm-m-javascript"> </span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">90</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-operator">+</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">computerChoice</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"! \nThe score is Player "</span><span class="cm-m-javascript cm-operator">+</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">playerRunningTotal</span><span class="cm-m-javascript"> </span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">91</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp; &nbsp;</span><span class="cm-m-javascript cm-operator">+</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">", Computer "</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-variable">computerRunningTotal</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-operator">+</span><span class="cm-m-javascript"> </span><span class="cm-m-javascript cm-string">"."</span><span class="cm-m-javascript">);</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">92</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">93</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript"> &nbsp;  }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 24px;">94</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-m-javascript">}</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 1826px;"></div><div class="CodeMirror-gutters" style="height: 1856px; left: 0px;"><div class="CodeMirror-gutter lint-gutter"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 32px;"></div></div></div></div></div></div></div></div></div><div class="feedback query-editor__controls"><button class="query-editor__controls__run-query">Run</button><div class="test-results"></div></div><div class="editor__output"><div class="console"><div class="stdout">The winner is computer</div><div class="stdout">Let's play Rock Paper Scissors</div></div><div class="dom-preview"><iframe src="./Unit 3 Project _ JavaScript _ GA Circuits_files/saved_resource.html" width="100%"></iframe></div></div></div></div></div></div>
+    
+
+
+</main>
+<script src="./Unit 3 Project _ JavaScript _ GA Circuits_files/application-24fbebc92825e9007152fc1001c8cf8fb3423e35ad968fce1e11e6313b13df8d.js"></script>
+<script>
+  (function() {
+    $(function() {
+      return $('.sign-out').on('click', function() {
+        return GA.Circuits.Analytics.clearLoginData();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  (function() {
+    $(function() {
+      return $('.sign-out').on('click', function() {
+        return GA.Circuits.Analytics.clearLoginData();
+      });
+    });
+  
+  }).call(this);
+</script>
+
+
+
+<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" src="./Unit 3 Project _ JavaScript _ GA Circuits_files/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html"></iframe><div id="ads"></div></body></html>

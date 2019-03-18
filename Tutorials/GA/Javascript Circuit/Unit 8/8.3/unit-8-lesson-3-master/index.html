@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Sublime Exercises</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+
+	<form action="">
+		<input id="item" type="text" placeholder="item">
+		<input id="cost" type="text" placeholder="cost">
+		<button type="submit">Add to list</button>
+	</form>
+	
+	<ul class="groceries">
+	  <!-- Step 1: Create a handlebars template for a list item with the following format:
+	   		<li>{{item}} - ${{cost}}</li> -->
+	   <script id="groceryItem" type="text/x-handlebars-template">
+	   		   	<li>{{item}} - ${{cost}}</li>	
+	   </script>
+	  
+	</ul>
+	<script src="js/jquery-3.0.0.js"></script>
+	<script src="js/handlebars-v4.0.5.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

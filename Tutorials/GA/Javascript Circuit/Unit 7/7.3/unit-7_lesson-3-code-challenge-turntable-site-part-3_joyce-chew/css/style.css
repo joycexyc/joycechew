@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after,
+li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ---------------------
+    Global
+------------------------*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #EF461F; /* Orange */
+    min-width: 610px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #EF461F; /* Orange */
+}
+
+h1 {
+    font-family: 'Droid Serif', serif;
+}
+
+ul {
+    list-style: none;
+}
+
+
+section {
+    padding-top: 90px;
+}
+
+section h1 {
+    text-align: center;
+    font-style: italic;
+    font-size: 45px;
+    margin: 0 0 50px;
+}
+
+article h2 {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+article a {
+    display: block;
+}
+
+
+/* ---------------------
+    Header
+------------------------*/
+
+header {
+    height: 100vh;
+    min-height: 600px;
+    background-color: #F9FFD9; Cream
+
+}
+
+
+header article {
+    clear: both;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    margin: 0 auto;
+}
+
+header hr {
+    margin: 40px 0;
+    border: 0;
+    border-bottom: 1px solid #EF461F; /* Orange */
+}
+
+header .fa {
+    font-size: 80px;
+}
+
+header {
+    text-align: center;
+}
+
+/* ---------------------
+    Nav
+------------------------*/
+
+
+header nav {
+    background-color: #EF461F; /* Orange */
+    padding: 0 15px;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all .3s ease-in-out;
+    min-width: 610px;
+}
+
+.scrolled {
+    background-color: #F9FFD9; /* Cream */
+    color: #EF461F; /* Orange */
+}
+
+.scrolled a {
+    color: #EF461F; /* Orange */
+}
+
+nav h1 {
+    float: left;
+}
+
+nav span {
+    float: right;
+    text-transform: uppercase;
+    margin: 23px 0;
+}
+
+nav a {
+    color: #F9FFD9; /* Cream */
+    font-weight: 700;
+    letter-spacing: .03em;
+    margin-left: 20px;
+}
+
+nav h1 a {
+    margin-left: 0;
+}
+
+
+/* ---------------------
+    FAQ
+------------------------*/
+
+
+.faq {
+    min-width: 600px;
+    width: 70%;
+    margin: 0 auto;
+    color: #EF461F; /* Orange */
+}
+
+.faq article {
+    padding: 15px;
+    transition: background-color .2s ease;
+    border-top: 2px solid #EF461F; /* Orange */
+}
+
+.faq article:last-of-type {
+    border-bottom: 2px solid #EF461F; /* Orange */
+}
+
+.faq p {
+    display: none;
+    opacity: 0;
+    font-family: 'Droid Serif', serif;
+    font-size: 19px;
+}
+
+.faq a {
+    color: #EF461F; /* Orange */
+}
+
+
+.faq .active {
+    background-color: #EF461F; /* Orange */
+    color: #F9FFD9; /* Cream */
+}
+
+.active a {
+    color: #F9FFD9; /* Cream */
+}
+
+.active p {
+    display: block;
+    opacity: 1;
+}
+
+
+/* ---------------------
+    Latest
+------------------------*/
+
+.latest {
+    padding: 100px 35px 0;
+}
+
+.latest .article {
+    margin-bottom: 40px;
+}
+
+.latest img {
+    float:  left;
+    width:  50%;
+    padding-right: 45px;
+
+}
+
+.latest .right-col {
+    float:  right;
+    width: 50%;
+}
+
+.latest .btn {
+    background-color: #EF461F; /* Orange */
+}
+
+/* ---------------------
+    Comments
+------------------------*/
+
+.comments {
+    width: 70%;
+    min-width: 600px;
+    margin: 0 auto;
+    color: #7BC8D0; /* Blue */
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+li:not([style*="display: none"]):first-child {
+    border-top: 2px solid #7BC8D0; /* Blue */
+}
+
+li {
+    border-bottom: 2px solid #7BC8D0; /* Blue */
+}
+
+li > p {
+    width: 70%;
+    float: left;
+    font-weight: 700;
+}
+
+li > .fa {
+    padding-right: 15px;
+    width: 30%;
+  float: left;
+  margin-top: 15px;
+  font-size: 20px;
+  display: block;
+  text-align: right;
+  cursor: pointer;
+}
+
+
+/* ---------------------
+    Comment Form
+------------------------*/
+
+.form-wrapper {
+    color: #7BC8D0; /* Blue */
+}
+
+.form-wrapper form {
+    min-width: 600px;
+    width: 70%;
+    margin: 40px auto 0;
+    clear:  both;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+    border: 2px solid #7BC8D0; /* Blue */
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
+    outline: none;
+}
+
+.form-wrapper input + p {
+    position:  relative;
+    top: -15px;
+    color: #EF461F; /* Orange */
+}
+
+.form-wrapper .error {
+    border-color: #EF461F; /* Orange */
+}
+
+button,
+.btn {
+    background-color: #7BC8D0; /* Blue */
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .03em;
+    font-size: 16px;
+    color: #F9FFD9; /* Cream */
+    border-radius: 4px;
+    padding:  15px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* #commentForm {
+    display: none;
+} */
+
+/* ---------------------
+    Footer
+------------------------*/
+
+footer {
+    padding: 5px 15px;
+    margin-top: 80px;
+    color: #F9FFD9; /* Cream */
+    background-color: #EF461F; /* Orange */
+}
+
+footer p {
+    float: left;
+}
+
+footer nav {
+    float: right;
+    margin-top: 15px;
+}
